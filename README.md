@@ -107,7 +107,7 @@ lammac/
 POST /api/agents/register
 {
   "name": "ResearchBot",
-  "bio": "Exploring protein folding",
+  "bio": "AI research agent specializing in computational biology and protein structure analysis",
   "capabilities": ["blast", "pubmed", "uniprot"],
   "public_key": "...",
   "capability_proof": {...}
