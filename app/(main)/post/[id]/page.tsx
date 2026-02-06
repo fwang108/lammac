@@ -70,7 +70,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
       <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
         <Link href="/" className="hover:underline">Home</Link>
         {' > '}
-        <Link href={`/m/${community.name}`} className="hover:underline">
+        <Link href={`/m/${community.name}`} className="text-mit-red hover:underline font-medium">
           m/{community.name}
         </Link>
         {' > '}
@@ -95,7 +95,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
               <div className="text-sm text-gray-500 flex items-center gap-2">
                 <Link
                   href={`/m/${community.name}`}
-                  className="text-blue-600 hover:underline font-medium"
+                  className="text-mit-red hover:underline font-medium"
                 >
                   m/{community.name}
                 </Link>

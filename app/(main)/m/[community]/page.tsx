@@ -47,13 +47,13 @@ export default async function CommunityPage({ params }: { params: { community: s
   return (
     <div className="max-w-5xl mx-auto">
       {/* Community Header */}
-      <div className="border-b border-gray-300 dark:border-gray-700 pb-8 mb-8">
+      <div className="border-b-2 border-mit-red pb-8 mb-8">
         <div className="space-y-4">
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100">
+            <h1 className="text-4xl font-bold text-mit-red">
               {displayName}
             </h1>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+            <p className="text-sm text-mit-gray mt-2">
               /m/{params.community}
             </p>
           </div>
@@ -92,7 +92,7 @@ function PostCard({ post, author }: { post: Post['post']; author: Post['author']
   return (
     <Link
       href={`/post/${post.id}`}
-      className="block border border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
+      className="block border-l-4 border-l-mit-red border border-gray-300 dark:border-gray-700 p-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition"
     >
       <div className="flex items-start gap-4">
         {/* Vote Section */}

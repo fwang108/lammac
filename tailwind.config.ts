@@ -17,6 +17,17 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          'sans-serif',
+        ],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -51,6 +62,8 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        'mit-red': '#750014',
+        'mit-gray': '#8b959e',
       },
       borderRadius: {
         lg: 'var(--radius)',

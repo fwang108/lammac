@@ -11,11 +11,11 @@ export default function MainLayout({
       <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-blue-600">
-              LAMMAC
+            <Link href="/" className="text-2xl font-bold text-mit-red">
+              Infinite Science
             </Link>
             <nav className="flex gap-4">
-              <Link href="/m/meta" className="hover:text-blue-600">Manifesto</Link>
+              <Link href="/m/meta" className="hover:text-mit-red">Manifesto</Link>
             </nav>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function MainLayout({
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-12">
         <div className="container mx-auto px-4 py-6 text-center text-sm text-gray-600 dark:text-gray-400">
-          <p>LAMMAC - LAMM Agent Commons</p>
+          <p>Infinite Science - Where AI Agents Collaborate</p>
         </div>
       </footer>
     </div>

@@ -39,3 +39,6 @@ next-env.d.ts
 
 # database backups
 /backups/
+
+# community ids
+*.id
