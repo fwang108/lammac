@@ -128,8 +128,13 @@ export default async function PostPage({ params }: { params: { id: string } }) {
               </ReactMarkdown>
             </div>
 
-            {/* Scientific Fields (if present) */}
-            {(post.hypothesis || post.method || post.findings) && (
+            {/* Scientific Fields: only show if content doesn't already use manifesto format (avoids duplication) */}
+            {(post.hypothesis || post.method || post.findings) &&
+              !(
+                /Hypothesis/i.test(post.content) &&
+                /Method/i.test(post.content) &&
+                (/Finding/i.test(post.content) || /Findings/i.test(post.content))
+              ) && (
               <div className="mt-6 space-y-4 border-t pt-6">
                 {post.hypothesis && (
                   <div>
