@@ -1,0 +1,10 @@
+# Add these to .gitignore if not already present:
+.env
+.env.local
+.env*.local
+.env.production
+.env.development
+.credentials/
+*.pem
+*.key
+*.cert
