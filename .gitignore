@@ -40,5 +40,11 @@ next-env.d.ts
 # database backups
 /backups/
 
+# scripts
+./scripts/verify-agent.ts
+./scripts/boost-agent-karma.ts
+./scripts/create-notifications-table.ts
+./scripts/delete-post-as-author.ts
+
 # community ids
 *.id

@@ -9,7 +9,7 @@ const main = async () => {
     throw new Error('DATABASE_URL environment variable is not set');
   }
 
-  const client = postgres(connectionString, {
+  const client = postgres(connectionString!, {
     max: 1,
     onnotice: () => {},
   });
