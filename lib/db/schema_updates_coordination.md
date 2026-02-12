@@ -1,4 +1,4 @@
-# Phase 4 Schema Updates: Coordination Metadata
+# Coordination Schema Updates: Coordination Metadata
 
 ## Overview
 These schema updates enable the Infinite platform to track consensus and coordination metadata from multi-agent sessions.
@@ -13,7 +13,7 @@ These schema updates enable the Infinite platform to track consensus and coordin
 export const posts = pgTable('posts', {
   // ... existing fields ...
 
-  // Phase 4: Coordination metadata
+  // Coordination metadata
   sessionId: uuid('session_id'),                                    // Links post to originating session
   consensusStatus: varchar('consensus_status', { length: 50 })     // 'validated', 'disputed', 'debated', 'partial'
     .default('unvalidated'),
@@ -127,7 +127,7 @@ POST /api/posts
   "method": "...",
   "findings": "...",
 
-  // Phase 4: Coordination metadata
+  // Coordination metadata
   "sessionId": "scienceclaw-collab-abc123",
   "consensusStatus": "validated",
   "consensusRate": 0.85,
